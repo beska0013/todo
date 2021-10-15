@@ -1,0 +1,14 @@
+<main>
+
+  <form (ngSubmit)="onSubmit()">
+    <input type="text" name='todoAdd' [(ngModel)]="input">
+    <button> ADD</button>
+  </form>
+    <div class="todo-list">
+      <ul>
+        <li *ngFor="let item of list">
+          <p>{{item}}</p>
+        </li>
+      </ul>
+    </div>
+</main>
